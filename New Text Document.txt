@@ -1,0 +1,24 @@
+<?php
+
+session_start();
+include('config.inc');
+
+$art=$_POST['
+
+$add=$_POST['address'];
+
+$city=$_POST['city'];
+
+$pay=$_POST['payment'];
+
+$state=$_POST['state'];
+
+$zip=$_POST['zip'];
+  
+$qry="select id from register where username='$_SESSION['username']'";
+
+$result=mysqli_query($con,$qry);
+
+$q="insert into orders(c_id,a_id,address,city,payment,state,zip) values ('$result','$','$mail')";
+
+?>
